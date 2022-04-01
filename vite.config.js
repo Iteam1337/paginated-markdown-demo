@@ -9,7 +9,10 @@ export default defineConfig({
   },
   plugins: [
     VitePWA({
-        manifest: {
+        manifest: {            
+            name: 'Paginated Markdown Demo',
+            short_name: 'Pagiantion Demo',
+            orientation: 'portrait',                    
             display: 'fullscreen'
         }
     })
