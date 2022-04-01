@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/paginated-markdown-demo/sw.js', { scope: '/paginated-markdown-demo/' })})}
