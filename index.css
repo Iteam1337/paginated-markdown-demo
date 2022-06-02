@@ -60,3 +60,12 @@ body {
 #content > p {
   scroll-snap-align: start;
 }
+
+#content > h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+#content > .hard-break {
+  flex-basis: 100%;
+}
