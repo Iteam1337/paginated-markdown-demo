@@ -15,17 +15,16 @@ contentWrapper.addEventListener('scroll', (e) => {
   // console.log(`Scroll!`, e);
 });
 contentWrapper.addEventListener('click', (e) => {
-  console.log(e.target, e.clientX, e.target.clientWidth, e.target.scrollLeft)
   if (e.clientX < e.target.clientWidth / 2) {
-    console.log('back', -contentWrapper.clientWidth * 0.5)
+    console.log('back', -contentWrapper.clientWidth)
     contentWrapper.scrollBy({
-      left: -contentWrapper.clientWidth * 0.5,
+      left: -contentWrapper.clientWidth,
       behavior: 'smooth'
     })
   } else {
-    console.log('next', contentWrapper.clientWidth * 0.5)
+    console.log('next', contentWrapper.clientWidth)
     contentWrapper.scrollBy({
-      left: contentWrapper.clientWidth * 0.5,
+      left: contentWrapper.clientWidth,
       behavior: 'smooth'
     })
   }
