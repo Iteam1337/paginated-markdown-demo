@@ -56,7 +56,15 @@ body {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
-
 #content > p {
   scroll-snap-align: start;
+}
+
+#content > .hard-break {
+  flex-basis: 100%;
+}
+
+#content > .heading1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
