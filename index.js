@@ -12,7 +12,9 @@ marked.use({ renderer });
 const htmlContent = marked.parse(content);
 const contentWrapper = document.querySelector('#content');
 contentWrapper.addEventListener('scroll', (e) => {
-  // console.log(`Scroll!`, e);
+  const scrollAmount = (contentWrapper.scrollLeft + contentWrapper.clientWidth) / contentWrapper.scrollWidth
+  console.log(`Scroll ${scrollAmount}`, e);
+  document.querySelector('#progress').value = scrollAmount * 100
 });
 contentWrapper.addEventListener('click', (e) => {
   if (e.clientX < e.target.clientWidth / 2) {

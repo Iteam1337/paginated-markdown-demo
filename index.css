@@ -13,6 +13,13 @@ body {
   display: grid;
 }
 
+#progress {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 8px;
+}
+
 #wrapper {
   width: 100vw;
   min-width: 100vw;
@@ -22,6 +29,7 @@ body {
   max-height: 100vh;
   margin: 0;
   padding: 0;
+  padding-bottom: 0.5em;
   position: relative;
 }
 
